@@ -37,7 +37,7 @@ export default class About extends React.PureComponent {
           <h1>
             <div className="grid-x">
               <Typist className="medium-6 auto cell">
-                a lover of technology
+                For Visally Impaired People
               </Typist>
               <div className="shrink cell">
                 <Heart className="titleIcon" style={styles.heart} />
@@ -47,20 +47,13 @@ export default class About extends React.PureComponent {
         </div>
         <div className="display-flex grid-x">
           <div className="flex auto cell" />
-          {profileData.getIn(['content', 'rendered']).length > 1 ? (
-            <span
-              className="medium-8 cell font-weight-light text-align-right indent"
-              color="inherit"
-              dangerouslySetInnerHTML={createProfileContent()}
-            />
-          ) : (
-            <span className="medium-8 cell text-align-right">
-              <Skeleton count={3} />
-              <br />
-              <br />
-              <Skeleton />
-            </span>
-          )}
+          <span
+            className="medium-8 cell font-weight-light text-align-right indent"
+            color="inherit"
+          >
+            Our project is Smart Reading Assistance for Visually Impaired
+            People, based on natural language understanding technology.
+          </span>
         </div>
         <br />
         <div className="grid-x">

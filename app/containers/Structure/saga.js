@@ -17,7 +17,7 @@ export function* getProfileDataSaga(action) {
   } catch (err) {
     const profileData = yield {
       content: {
-        rendered: `<div class="initial-letter"><p>As a full stack software engineer, I specialize in React and Blockchain technologies. In addition, I am versed in user experience design, object oriented programming with Java and C#, database development with both SQL and NoSQL, functional programming with ReasonML, Elm, and F# (Fable), and native development with React Native.</p> <p>I have a passion for life, technology, and learning.</p> </div>`,
+        rendered: `<div class="initial-letter"><p>As a full stack software engineer, I specialize in React and Blockchain technologies. In addition, I am versed in user experience design, object oriented programming with Java and C#, database development with both SQL and NoSQL, functional programming with ReasonML, Elm, and F# (Fable), and native development with React Native.</p> <p>Let's build a world with love and technology.</p> </div>`,
       },
     };
     yield put(getProfileDataResponseAction(profileData));

@@ -127,9 +127,9 @@ class Structure extends React.Component {
           />
           <Divider />
           <DrawerButton title="About" onClick={openMenu} />
-          <DrawerButton title="Discover" to="/discover" onClick={openMenu} />
-          <DrawerButton title="Blog" to="/blog" onClick={openMenu} />
-          <DrawerButton title="Contact" to="/contact" onClick={openMenu} />
+          <DrawerButton title="Demo" to="/discover" onClick={openMenu} />
+          <DrawerButton title="Discover" to="/blog" onClick={openMenu} />
+          <DrawerButton title="Reference" to="/contact" onClick={openMenu} />
         </SwipeableDrawer>
         <Layout
           openNotif={openNotif}
@@ -144,19 +144,19 @@ class Structure extends React.Component {
             <AppBarButton
               className="show-for-large"
               key="discover"
-              title="Discover"
+              title="Demo"
               to="/discover"
             />,
             <AppBarButton
               className="show-for-large"
               key="blog"
-              title="Blog"
+              title="Discover"
               to="/blog"
             />,
             <AppBarButton
               className="show-for-large"
               key="contact"
-              title="Contact"
+              title="Reference"
               to="/contact"
             />,
           ]}

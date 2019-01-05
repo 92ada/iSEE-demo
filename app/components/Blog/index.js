@@ -9,9 +9,11 @@ import Rebloggr from 'rebloggr';
 
 // import Rebloggr from 'components/Rebloggr';
 import ConsoleLine from 'mdi-material-ui/ConsoleLine';
-import BookOpenPageVariant from 'mdi-material-ui/BookOpenPageVariant';
+import Forum from 'mdi-material-ui/Forum';
 import Typist from 'react-typist';
 import Skeleton from 'react-loading-skeleton';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 import BackgroundAvatar from 'components/BackgroundAvatar';
 
@@ -24,11 +26,37 @@ const styles = {
   bookOpenPageVariant: {
     marginBottom: '0.5rem',
   },
+  input: {
+    background: '#fff',
+    width: '60%',
+    float: 'right',
+  },
 };
 
 /* eslint-disable react/prefer-stateless-function */
 export default class Blog extends React.Component {
-  state = {};
+  state = { paragraph: null, question: null, answer: null };
+
+  handleParagraph = event => {
+    this.setState({ paragraph: event.target.value });
+  };
+
+  handleQuestion = event => {
+    this.setState({ question: event.target.value });
+  };
+
+  handleSubmit = event => {
+    event.preventDefault();
+    fetch(
+      `http://10.20.77.71:5000/?para=${this.state.paragraph}&q=${
+        this.state.question
+      }`,
+    )
+      .then(response => response.text())
+      .then(answer =>
+        this.setState({ answer }, () => console.log(this.state.answer)),
+      );
+  };
 
   render() {
     return (
@@ -38,9 +66,11 @@ export default class Blog extends React.Component {
           <div className="flex" />
           <h1>
             <div className="grid-x">
-              <Typist className="medium-6 auto cell">a lover of sharing</Typist>
+              <Typist className="medium-6 auto cell">
+                try to question the computer
+              </Typist>
               <div className="shrink cell">
-                <BookOpenPageVariant
+                <Forum
                   className="titleIcon"
                   style={styles.bookOpenPageVariant}
                 />
@@ -48,21 +78,48 @@ export default class Blog extends React.Component {
             </div>
           </h1>
         </div>
+        <br />
+        <br />
+        <br />
         <div className="display-flex">
           <div className="flex" />
-          <BlogWrapper>
-            <Rebloggr
-              className="auto cell"
-              titleIcon={<ConsoleLine />}
-              titleClassName="font-weight-light"
-              loadingComponent={
-                <h1>
-                  <Skeleton count={3} />
-                </h1>
-              }
-            />
-          </BlogWrapper>
+          <div className="medium-8 cell">
+            <form onSubmit={this.handleSubmit}>
+              <TextField
+                multiline
+                label="Paragraph"
+                variant="filled"
+                onChange={this.handleParagraph}
+                error
+                style={styles.input}
+              />
+              <TextField
+                label="Question"
+                variant="filled"
+                onChange={this.handleQuestion}
+                error
+                style={styles.input}
+              />
+              <br />
+              <br />
+              <br />
+              <br />
+              <Button
+                variant="contained"
+                color="secondary"
+                type="submit"
+                float="right"
+              >
+                Submit
+              </Button>
+              <br />
+              <br />
+              <br />
+              <br />
+            </form>
+          </div>
         </div>
+        Answer: {this.state.answer}
       </div>
     );
   }

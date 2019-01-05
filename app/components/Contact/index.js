@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import Forum from 'mdi-material-ui/Forum';
+import BookOpenPageVariant from 'mdi-material-ui/BookOpenPageVariant';
 import Typist from 'react-typist';
 
 import { backgroundContrastLight } from 'static/Colors';
@@ -28,11 +28,12 @@ export default class Contact extends React.PureComponent {
           <div className="flex" />
           <h1>
             <div className="grid-x">
-              <Typist className="medium-6 auto cell flex">
-                a lover of communication
-              </Typist>
+              <Typist className="medium-6 auto cell flex">Reference</Typist>
               <div className="shrink cell">
-                <Forum className="titleIcon" style={styles.forum} />
+                <BookOpenPageVariant
+                  className="titleIcon"
+                  style={styles.bookOpenPageVariant}
+                />
               </div>
             </div>
           </h1>
@@ -41,62 +42,91 @@ export default class Contact extends React.PureComponent {
           <div className="auto cell" />
           <span className="text-align-right medium-10 cell grid-x">
             <div className="cell">
-              So you'd like to get in touch.
-              <br />
-              <br />
-              To save us both time, I've put together a brief guide to help you
-              find the best medium to reach me through.
               <br />
               <br />
             </div>
             <ContactOptionContainer className="large-6 cell">
               <div>
-                <h3>You should contact me by email if</h3>
                 <ul dir="rtl">
+                  <li>Blitab, [Online]. Available: http://blitab.com</li>
+                  <br />
                   <li>
-                    You or your organization are interested in a training on
-                    React or Blockchain
+                    Apple, Voiceover, [Online]. Available:
+                    https://www.apple.com/cn /accessibility/iphone/vision
                   </li>
                   <br />
                   <li>
-                    You'd like me to consult on a project with you through
-                    Devoteam
+                    Tri Nguyen, Mir Rosenberg, et al. MS MARCO: A Human
+                    Generated MAchine Reading COmprehension Dataset. arXiv
+                    preprint arXiv:1611.09268v2. 2016
                   </li>
                   <br />
                   <li>
-                    You are looking for career advice or have other business
-                    questions
+                    Pranav Rajpurkar, Robin Jia, Percy Liang. Know What You Dont
+                    Know: Unanswerable Questions for SQuAD. arXiv preprint
+                    arXiv:1806.03822v1. 2018
+                  </li>
+                  <br />
+                  <li>
+                    Natural Language Computing Group, Microsoft Research Asia.
+                    R-NET: MACHINE READING COMPREHENSION WITH SELF-MATCHING
+                    NETWORKS/. 2017
+                  </li>
+                  <br />
+                  <li>
+                    Yizhong Wang, Kai Liu, et al. Multi-Passage Machine Reading
+                    Comprehension with Cross-Passage Answer Verification. arXiv
+                    preprint arXiv:1805.02220v2. 2018
                   </li>
                   <br />
                 </ul>
-                <p>
-                  If this fits your enquiry, you can reach me at{' '}
-                  <a href="mailto:kev@typekev.com">
-                    <strong>kev@typekev.com</strong>
-                  </a>.
-                </p>
               </div>
             </ContactOptionContainer>
             <ContactOptionContainer className="large-6 cell">
               <div>
-                <h3>You should contact me by social media if</h3>
                 <ul dir="rtl">
-                  <li>You want to say hello</li>
+                  <li>
+                    Google, Talkback, [Online]. Available:
+                    https://github.com/google/talkback
+                  </li>
                   <br />
-                  <li>You want to know more about me</li>
+                  <li>
+                    Chin-Yew Lin and Eduard Hovy. Automatic Evaluation of
+                    Summaries Using N-gram Co-Occurrence Statistics. Proceedings
+                    of HLT-NAACL. 2003
+                  </li>
                   <br />
-                  <li>Any other reason</li>
+                  <li>
+                    Mikolov, Tomas, et al. Efficient Estimation of Word
+                    Representations in Vector Space.
+                  </li>
+                  <br />
+                  <li>
+                    {' '}
+                    R. Jeffrey Pennington and C. Manning. Glove: Global vectors
+                    for word representation.
+                  </li>
+                  <br />
+                  <li>
+                    {' '}
+                    Ilya Sutskever, et al. Sequence to Sequence Learning with
+                    Neural Networks. arXiv preprint arXiv:1409.3215. 2014
+                  </li>
+                  <br />
+                  <li>
+                    {' '}
+                    Xiang Zhang, et al. Character-level Convolutional Networks
+                    for Text Classification. arXiv preprint arXiv:1509.01626v3.
+                    2016
+                  </li>
+                  <br />
+                  <li>
+                    {' '}
+                    Minjoon Seo, et al. Bidirectional Attention Flow for Machine
+                    Comprehension. arXiv preprint arXiv:1611.01603. 2016
+                  </li>
+                  <br />
                 </ul>
-                <span className="text-align-right cell">
-                  <SocialMediaButtons />
-                </span>
-                <br />
-                <p>
-                  Find me everywhere as{' '}
-                  <a href="https://twitter.com/typekev" target="_blank">
-                    <strong>@typekev</strong>
-                  </a>
-                </p>
               </div>
             </ContactOptionContainer>
           </span>

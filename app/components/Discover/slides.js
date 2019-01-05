@@ -11,7 +11,7 @@ import DiscoverVideo from './DiscoverVideo';
 import DiscoverVideoContainer from './DiscoverVideoContainer';
 import SlideDescription from './SlideDescription';
 
-import devoteamDiscoveryLoopVideo from 'videos/devoteam-discovery-loop.webm';
+// import devoteamDiscoveryLoopVideo from 'videos/devoteam-discovery-loop.webm';
 import dimkastDiscoveryLoopVideo from 'videos/dimkast-discovery-loop.webm';
 import uxpeakDiscoveryLoopVideo from 'videos/uxpeak-discovery-loop.webm';
 import devoteamDiscoveryLoopVideoMp4 from 'videos/devoteam-discovery-loop.mp4';
@@ -20,7 +20,7 @@ import uxpeakDiscoveryLoopVideoMp4 from 'videos/uxpeak-discovery-loop.mp4';
 
 const slides = [
   {
-    title: 'a lover of exploration',
+    title: 'a demo on a real machine',
     icon: Earth,
     iconStyleName: 'earth',
     subtitle: 'I believe in research & discovery',
@@ -39,7 +39,7 @@ const slides = [
           }}
         >
           <Button color="secondary" variant="contained">
-            See where I work
+            See what we've done
           </Button>
         </Link>
       </span>
@@ -78,7 +78,7 @@ const slides = [
         </SlideDescription>
         <DiscoverVideoContainer className="large-8 cell">
           <DiscoverVideo controls loop autoPlay muted>
-            <source src={devoteamDiscoveryLoopVideo} type="video/webm" />
+            {/* <source src={devoteamDiscoveryLoopVideo} type="video/webm" /> */}
             <source src={devoteamDiscoveryLoopVideoMp4} type="video/mp4" />
           </DiscoverVideo>
         </DiscoverVideoContainer>

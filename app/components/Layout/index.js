@@ -73,10 +73,10 @@ function Layout({ children, openNotif, openMenu, menuItemsList }) {
               <span className="show-for-large">
                 <HeaderLogo src={logo} alt="typekev logo" />
               </span>
-              <span>typekev</span>
+              <span>iSEE:</span>
               <span className="show-for-medium font-weight-very-light">
                 {' '}
-                fullstack developer
+                Smart Reading Assistant
               </span>
             </Link>
           </Typography>
