@@ -21,7 +21,7 @@ const slides = [
     title: 'demos on a real machine',
     icon: Earth,
     iconStyleName: 'earth',
-    subtitle: 'I believe in research & discovery',
+    subtitle: '',
     view: (
       <span className="medium-8 cell text-align-right indent">
         We have completed a system that can run on the Android machine. The system can get the text of the current interface of the user's mobile phone and trigger the voice input interface through gestures (get the user's voice input and upload the input to the online recognition API of Baidu voice to complete the speech-to-text conversion) to get the user input questions. Then the system sends the article-question package to the server, the server will return the answer to the question to our system and our system will Use a text-to-speech api(Android.speech.tts.TextToSpeech) to read the answer out. The server uses Glove as the word embadding algorithm, and uses BIDAF to train the model, powered by the TensorﬂowServing framework.
