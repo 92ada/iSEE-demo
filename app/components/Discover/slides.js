@@ -11,9 +11,7 @@ import DiscoverVideo from './DiscoverVideo';
 import DiscoverVideoContainer from './DiscoverVideoContainer';
 import SlideDescription from './SlideDescription';
 
-// import devoteamDiscoveryLoopVideo from 'videos/devoteam-discovery-loop.webm';
-import dimkastDiscoveryLoopVideo from 'videos/dimkast-discovery-loop.webm';
-import uxpeakDiscoveryLoopVideo from 'videos/uxpeak-discovery-loop.webm';
+
 import devoteamDiscoveryLoopVideoMp4 from 'videos/devoteam-discovery-loop.mp4';
 import dimkastDiscoveryLoopVideoMp4 from 'videos/dimkast-discovery-loop.mp4';
 import uxpeakDiscoveryLoopVideoMp4 from 'videos/uxpeak-discovery-loop.mp4';
@@ -117,7 +115,6 @@ const slides = [
         </SlideDescription>
         <DiscoverVideoContainer className="large-8 cell">
           <DiscoverVideo controls loop autoPlay muted>
-            <source src={dimkastDiscoveryLoopVideo} type="video/webm" />
             <source src={dimkastDiscoveryLoopVideoMp4} type="video/mp4" />
           </DiscoverVideo>
         </DiscoverVideoContainer>
@@ -152,7 +149,6 @@ const slides = [
         </SlideDescription>
         <DiscoverVideoContainer className="large-8 cell">
           <DiscoverVideo controls loop autoPlay muted>
-            <source src={uxpeakDiscoveryLoopVideo} type="video/webm" />
             <source src={uxpeakDiscoveryLoopVideoMp4} type="video/mp4" />
           </DiscoverVideo>
         </DiscoverVideoContainer>
