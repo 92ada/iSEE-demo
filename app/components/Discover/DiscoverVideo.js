@@ -21,6 +21,7 @@ const DiscoverVideo = styled.video`
 
   @media (min-width: ${large}) {
     height: calc(890 / 1440 * 100%);
+    // height: 100%;
   }
 `;
 

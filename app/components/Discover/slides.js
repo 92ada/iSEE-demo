@@ -46,35 +46,35 @@ const slides = [
     ),
   },
   {
-    title: 'devoteam & me',
+    title: 'demo question 1',
     icon: AccountHeart,
     iconStyleName: 'accountHeart',
-    subtitle: 'Digital Transformakers',
+    subtitle: '',
     view: (
       <div className="cell grid-x">
-        <SlideDescription className="large-4 cell">
-          Some people wait for the future.
-          <br />
-          At <strong>Devoteam</strong>, we make it.
-          <br />
-          <br />
-          I function as a consultant, a leader, a teacher, and a friend. I
-          specialize in JavaScript technologies; specifically React.
-          <br />
-          <br />
-          In addition, I have a strong passion for emerging technologies, so I
-          function as a Blockchain specialist and actively study and test new
-          tools with my team.
-          <br />
-          <br />
-          <Button
-            color="secondary"
-            variant="contained"
-            href="https://lu.devoteam.com"
-            target="_blank"
-          >
-            Visit Devoteam
-          </Button>
+        <SlideDescription className="large-2 cell">
+          {/*Some people wait for the future.*/}
+          {/*<br />*/}
+          {/*At <strong>Devoteam</strong>, we make it.*/}
+          {/*<br />*/}
+          {/*<br />*/}
+          {/*I function as a consultant, a leader, a teacher, and a friend. I*/}
+          {/*specialize in JavaScript technologies; specifically React.*/}
+          {/*<br />*/}
+          {/*<br />*/}
+          {/*In addition, I have a strong passion for emerging technologies, so I*/}
+          {/*function as a Blockchain specialist and actively study and test new*/}
+          {/*tools with my team.*/}
+          {/*<br />*/}
+          {/*<br />*/}
+          {/*<Button*/}
+            {/*color="secondary"*/}
+            {/*variant="contained"*/}
+            {/*href="https://lu.devoteam.com"*/}
+            {/*target="_blank"*/}
+          {/*>*/}
+            {/*Visit Devoteam*/}
+          {/*</Button>*/}
         </SlideDescription>
         <DiscoverVideoContainer className="large-8 cell">
           <DiscoverVideo controls loop autoPlay muted>
@@ -86,34 +86,34 @@ const slides = [
     ),
   },
   {
-    title: 'dimkast',
+    title: 'demo question 2',
     icon: CellphoneText,
     iconStyleName: 'cellphoneText',
-    subtitle: 'Turning passion into money',
+    subtitle: '',
     view: (
       <div className="cell grid-x">
-        <SlideDescription className="large-4 cell">
-          Why not do what you love?
-          <br />
-          <strong>Dimkast</strong> makes nightlife easy for everyone.
-          <br />
-          <br />
-          I built the production version of this app using React Native. It's a
-          service that connects passionate freelancers with the jobs they love.
-          <br />
-          <br />
-          You'll be able to find <strong>Dimkast</strong> in the Google Play
-          Store and Apple App Store. Currently it is only available in
-          Luxembourg.
-          <br />
-          <br />
-          <Button
-            variant="contained"
-            href="https://dimkast.com"
-            target="_blank"
-          >
-            Try Dimkast
-          </Button>
+        <SlideDescription className="large-2 cell">
+          {/*Why not do what you love?*/}
+          {/*<br />*/}
+          {/*<strong>Dimkast</strong> makes nightlife easy for everyone.*/}
+          {/*<br />*/}
+          {/*<br />*/}
+          {/*I built the production version of this app using React Native. It's a*/}
+          {/*service that connects passionate freelancers with the jobs they love.*/}
+          {/*<br />*/}
+          {/*<br />*/}
+          {/*You'll be able to find <strong>Dimkast</strong> in the Google Play*/}
+          {/*Store and Apple App Store. Currently it is only available in*/}
+          {/*Luxembourg.*/}
+          {/*<br />*/}
+          {/*<br />*/}
+          {/*<Button*/}
+            {/*variant="contained"*/}
+            {/*href="https://dimkast.com"*/}
+            {/*target="_blank"*/}
+          {/*>*/}
+            {/*Try Dimkast*/}
+          {/*</Button>*/}
         </SlideDescription>
         <DiscoverVideoContainer className="large-8 cell">
           <DiscoverVideo controls loop autoPlay muted>
@@ -125,30 +125,30 @@ const slides = [
     ),
   },
   {
-    title: 'uxpeak',
+    title: 'demo question 3',
     icon: Newspaper,
-    subtitle: 'Sharing user experience and technology news',
+    subtitle: '',
     view: (
       <div className="cell grid-x">
-        <SlideDescription className="large-4 cell">
-          I like to keep up with the latest tech news.
-          <br />
-          <strong>UXPeak</strong> is an online magazine where writers share
-          their thoughts on design, technology, and programming.
-          <br />
-          <br />
-          I built the site for fun, but it has since become an active hub for
-          writers from many different backgrounds.
-          <br />
-          <br />
-          <Button
-            color="primary"
-            variant="contained"
-            href="https://uxpeak.com"
-            target="_blank"
-          >
-            Read UXPeak
-          </Button>
+        <SlideDescription className="large-2 cell">
+          {/*I like to keep up with the latest tech news.*/}
+          {/*<br />*/}
+          {/*<strong>UXPeak</strong> is an online magazine where writers share*/}
+          {/*their thoughts on design, technology, and programming.*/}
+          {/*<br />*/}
+          {/*<br />*/}
+          {/*I built the site for fun, but it has since become an active hub for*/}
+          {/*writers from many different backgrounds.*/}
+          {/*<br />*/}
+          {/*<br />*/}
+          {/*<Button*/}
+            {/*color="primary"*/}
+            {/*variant="contained"*/}
+            {/*href="https://uxpeak.com"*/}
+            {/*target="_blank"*/}
+          {/*>*/}
+            {/*Read UXPeak*/}
+          {/*</Button>*/}
         </SlideDescription>
         <DiscoverVideoContainer className="large-8 cell">
           <DiscoverVideo controls loop autoPlay muted>

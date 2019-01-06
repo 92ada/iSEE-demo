@@ -81,28 +81,28 @@ function Layout({ children, openNotif, openMenu, menuItemsList }) {
             </Link>
           </Typography>
           {menuItemsList}
-          <Tooltip title="My open source work">
-            <IconButton
-              color="inherit"
-              href="https://github.com/typekev"
-              target="_blank"
-            >
-              <GithubCircle />
-            </IconButton>
-          </Tooltip>
-          <IconButton
-            color="inherit"
-            onClick={() =>
-              openNotif('contact', 'Need a React or Blockchain specialist?')
-            }
-          >
-            <Badge
-              badgeContent={<h2 className="font-weight-normal">!</h2>}
-              color="error"
-            >
-              <Bell />
-            </Badge>
-          </IconButton>
+          {/*<Tooltip title="My open source work">*/}
+            {/*<IconButton*/}
+              {/*color="inherit"*/}
+              {/*href="#"*/}
+              {/*target="_blank"*/}
+            {/*>*/}
+              {/*<GithubCircle />*/}
+            {/*</IconButton>*/}
+          {/*</Tooltip>*/}
+          {/*<IconButton*/}
+            {/*color="inherit"*/}
+            {/*onClick={() =>*/}
+              {/*openNotif('contact', 'Need a React or Blockchain specialist?')*/}
+            {/*}*/}
+          {/*>*/}
+            {/*<Badge*/}
+              {/*badgeContent={<h2 className="font-weight-normal">!</h2>}*/}
+              {/*color="error"*/}
+            {/*>*/}
+              {/*<Bell />*/}
+            {/*</Badge>*/}
+          {/*</IconButton>*/}
         </Toolbar>
       </AppBar>
       <CardContainer>
@@ -120,7 +120,7 @@ function Layout({ children, openNotif, openMenu, menuItemsList }) {
           <div className="flex" />
           <Typography component="h3" color="inherit">
             <span className="font-weight-light">
-              <Copyright style={styles.copyright} /> typekev {year}
+              <Copyright style={styles.copyright} /> iSEE {year}
             </span>
           </Typography>
         </Toolbar>

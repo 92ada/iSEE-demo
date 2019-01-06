@@ -132,7 +132,7 @@ class Structure extends React.Component {
           <DrawerButton title="Reference" to="/contact" onClick={openMenu} />
         </SwipeableDrawer>
         <Layout
-          openNotif={openNotif}
+          // openNotif={openNotif}
           openDialog={openDialog}
           openMenu={openMenu}
           menuItemsList={[
