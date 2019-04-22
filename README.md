@@ -1,5 +1,3 @@
-# https://typekev.com
+A demo website for the project **Reading Assistant for Visually Impaired People**
 
-A site to showcase what I'm currently working on.
-
-Updated as regularly as possible.
+Forked from typekev/typekev-site. 
